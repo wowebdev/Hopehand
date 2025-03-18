@@ -1,0 +1,94 @@
+body {
+  background-color: #1e2021;
+}
+
+.login_or {
+  text-align: center;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+}
+
+.have_account {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border-color: #345d93 !important;
+  border-radius: 25px !important;
+  width: 31rem !important;
+  background-color: #ffffffbf !important;
+}
+
+.auth input {
+  width: 21rem !important;
+}
+
+.login_btns {
+  border-color: #345d93 !important;
+  border-radius: 25px !important;
+  width: 12rem !important;
+  /* background-color: #43b0f1 !important; */
+  /* height: 2.5rem !important; */
+  text-align: center;
+}
+
+.auth .login_btns {
+  width: 9rem !important;
+}
+.auth .otp_sign_btn {
+  position: absolute;
+  top: 16.1rem;
+  left: 48.5rem;
+}
+
+.login_btns:hover {
+  background-color: #43b0f1 !important;
+  transition: 0.5s ease;
+}
+
+.have_account_signup {
+  color: #1e2021 !important;
+  margin-left: 0.5rem !important;
+}
+
+.forget_password {
+  display: flex;
+  justify-content: center;
+}
+
+a,
+b {
+  text-decoration: none !important;
+  color: #0f0f10b6 !important;
+}
+
+a:hover,
+b:hover {
+  text-decoration: underline !important;
+  color: #0f0f10d5 !important;
+  transition: 0.4s ease;
+}
+
+.pass_eye {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fa-eye {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: #27272886;
+  z-index: 1;
+  transition: 0.4s ease;
+}
+
+.fa-eye:hover {
+  color: #272728e0;
+  cursor: pointer;
+}
