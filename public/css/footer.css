@@ -1,0 +1,36 @@
+footer {
+  color: white;
+}
+
+.f1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7f4be5;
+  height: 2rem;
+  width: 100%;
+}
+
+#f1-text{
+ margin-left: 5rem;
+ font-weight: 700 !important;
+ font-size: 1.2rem;
+}
+
+#f1-icons {
+  width: 12%;
+  font-size: 1.5rem;
+  margin-right: 4rem;
+}
+
+.f2{
+    display: flex;
+    justify-content: space-between;
+    background-color: #345d93;
+}
+
+.f3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #223b5a;
+}

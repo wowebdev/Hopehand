@@ -28,8 +28,8 @@ app.listen("3000", (req, res) => {
   console.log("Listening to the port 3000");
 });
 
-app.get("/", (req, res) => {
-  res.send("HOME PAGE");
+app.get("/home", (req, res) => {
+  res.render("mainpage/main.ejs");
 });
 
 app.get("/jobs", async (req, res) => {
