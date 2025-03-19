@@ -1,0 +1,26 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<section>
+  <div class="container job_listings">
+    <h3 class="mt-3 offset-1">Available jobs</h3>
+    <div class="search_job mt-3">
+      <p>Didn't find job ?</p>
+      <a href="/">Search here</a>
+    </div>
+    <div class="job_list offset-2">
+      <% for(job of jobs) {%>
+      <div class="card" style="width: 15rem; height: 19rem">
+        <img
+          src="<%= job.image_url %>"
+          class="card-img-top"
+          alt="briefcase image"
+        />
+        <div class="card-body">
+          <h6 class="card-title"><%= job.title %></h6>
+          <a href="#" class="showmore">Show More..</a>
+        </div>
+      </div>
+
+      <% } %>
+    </div>
+  </div>
+</section>

@@ -39,9 +39,16 @@ input {
 .auth .login_btns {
   width: 9rem !important;
 }
+
 .auth .otp_sign_btn {
   position: absolute;
   top: 16.1rem;
+  left: 48.5rem;
+}
+
+.auth .btn_otp {
+  position: absolute;
+  top: 13.3rem;
   left: 48.5rem;
 }
 
