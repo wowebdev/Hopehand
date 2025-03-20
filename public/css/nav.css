@@ -1,9 +1,9 @@
 .navbar {
   background-color: #bbe7f5;
   height: 4.5rem;
-  width: 80%;
+  width: 75%;
+  margin: auto !important;
   margin-top: 0.5rem !important;
-  margin: auto;
   border-radius: 5rem;
   background: rgba(187, 231, 245, 0.5);
   backdrop-filter: blur(10px);

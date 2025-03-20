@@ -1,23 +1,25 @@
 <% layout('/layouts/boilerplate') %>
-<div class="row mt-2 container">
-  <h3 class="mb-3 mt-2 offset-3">Login as Worker</h3>
-  <div class="col-5 mt-2 offset-3">
-    <form action="/login" method="POST" novalidate class="needs-validation">
-      <div class="mb-1">
-        <!-- <label for="username" class="form-label">Username</label> -->
-        <input
-          type="text"
-          name="username"
-          id="username"
-          class="form-control"
-          placeholder="username"
-          required
-        />
-      </div>
-      <p class="login_or mt-2">OR</p>
-      <!-- <div class="mb-3">
+<!-- <div class=""></div> -->
+<div class="cent offset-1">
+  <div class="row mt-2 container">
+    <h3 class="mb-3 mt-2 offset-2">Login as Worker</h3>
+    <div class="col-5 mt-2 offset-3 cent_1">
+      <form action="/login" method="POST" novalidate class="needs-validation">
+        <div class="mb-1">
+          <!-- <label for="username" class="form-label">Username</label> -->
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="form-control"
+            placeholder="username"
+            required
+          />
+        </div>
+        <p class="login_or mt-2">OR</p>
+        <!-- <div class="mb-3">
         <-- <label for="email" class="form-label">Email id</label> -->
-      <!-- <input
+        <!-- <input
           type="email"
           name="email"
           id="email"
@@ -27,61 +29,66 @@
         />
       </div> -->
 
-      <div class="mb-1">
-        <!-- <label for="phone" class="form-label">Phone No.</label> -->
-        <input
-          type="number"
-          name="phone"
-          id="phone"
-          class="form-control"
-          placeholder="Phone No."
-          required
-        />
-      </div>
-
-      <div class="auth mt-3">
-        <div class="mb-1 col-7 pass_eye">
-          <!-- <label for="password" class="form-label">Password</label> -->
-          <div>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              class="form-control"
-              placeholder="password"
-              required
-            />
-          </div>
-          <div><i class="fa-solid fa-eye"></i></div>
+        <div class="mb-1">
+          <!-- <label for="phone" class="form-label">Phone No.</label> -->
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            class="form-control"
+            placeholder="Phone No."
+            required
+          />
         </div>
-        <button class="btn col-3 btn_otp login_btns">Send Otp</button>
-      </div>
 
-      <br />
-      <div class="mb-1">
-        <!-- <label for="otp" class="form-label">Enter Otp</label> -->
-        <input
-          type="number"
-          name="otp"
-          id="otp"
-          class="form-control"
-          placeholder="Enter Otp"
-          required
-        />
-      </div>
+        <div class="auth mt-4">
+          <div class="mb-1 col-7 pass_eye">
+            <!-- <label for="password" class="form-label">Password</label> -->
+            <div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control"
+                placeholder="password"
+                required
+              />
+            </div>
+            <div><i class="fa-solid fa-eye"></i></div>
+          </div>
+          <div class="send_otp">
+            <form action="/otp">
+              <button class="btn col-3 login_btns">Send Otp</button>
+            </form>
+          </div>
+        </div>
 
-      <button class="btn mt-3 mb-3 mx-auto d-grid login_btns">Login</button>
-      <p class="login_or">OR</p>
-      <button class="btn mx-auto d-grid login_btns">Login Using Email</button>
+        <br />
+        <div class="mb-1">
+          <!-- <label for="otp" class="form-label">Enter Otp</label> -->
+          <input
+            type="number"
+            name="otp"
+            id="otp"
+            class="form-control"
+            placeholder="Enter Otp"
+            required
+          />
+        </div>
 
-      <div class="have_account mt-4">
-        <p>Don't have account ?</p>
-        <a href="/signup" class="have_account_signup"><b>SignUP</b></a>
-      </div>
-      <div class="forget_password">
-        <p>Forget Password ?</p>
-        <a href="/resetpassword" class="have_account_signup"><b>Reset</b></a>
-      </div>
-    </form>
+        <button class="btn mt-4 mb-3 mx-auto d-grid login_btns">Login</button>
+        <p class="login_or">OR</p>
+        <button class="btn mx-auto d-grid login_btns">Login Using Email</button>
+
+        <div class="have_account mt-4">
+          <p>Don't have account ?</p>
+          <a href="/signup" class="have_account_signup"><b>SignUP</b></a>
+        </div>
+        <div class="forget_password">
+          <p>Forget Password ?</p>
+          <a href="/resetpassword" class="have_account_signup"><b>Reset</b></a>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
