@@ -5,7 +5,7 @@ footer {
 .f1 {
   display: flex;
   justify-content: space-between;
-  background-color: #7f4be5;
+  background-color: #134693e6;
   height: 2rem;
   width: 100%;
 }
@@ -25,7 +25,7 @@ footer {
 .f2{
     display: flex;
     justify-content: space-between;
-    background-color: #345d93;
+    background-color: #1d4477;
 }
 
 .f3{
