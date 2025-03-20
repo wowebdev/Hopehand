@@ -31,11 +31,11 @@
   border-radius: 2rem;
 }
 
-.fa-magnifying-glass{
-    font-size: 1.5rem;
-    margin-right: 1rem;
+.fa-magnifying-glass {
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
-.navbar a:hover{
-    text-decoration: none !important;
+.navbar a:hover {
+  text-decoration: none !important;
 }
