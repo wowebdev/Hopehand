@@ -2,12 +2,25 @@
   font-family: "Lato", sans-serif !important;
 }
 
-h3 {
+.cent {
+  display: flex !important;
+  justify-content: center;
+}
+
+.container h3 {
   width: 100vh !important;
 }
 
 .container {
-  margin: auto 4.54rem !important;
+  /* margin: auto 4.54rem !important; */
+  margin-top: 5rem !important;
+}
+
+.details {
+  min-width: min-content !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin-left: 22rem !important;
 }
 
 .details input {
@@ -46,6 +59,10 @@ h3 {
   /* margin-left: 2rem !important; */
   border: 1px solid #345d93 !important;
   border-radius: 15px !important;
+}
+.address {
+  display: flex;
+  flex-direction: column;
 }
 
 .address textarea {

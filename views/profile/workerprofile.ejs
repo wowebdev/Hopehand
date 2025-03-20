@@ -1,261 +1,263 @@
 <% layout("/layouts/boilerplate.ejs") %>
-<div class="row mt-2 container">
-  <h3 class="mb-1 mt-2 offset-3">Personal Details</h3>
-  <div class="col-5 mt-2 offset-3 details">
-    <form
-      action="/workerdetails"
-      method="POST"
-      novalidate
-      class="needs-validation"
-    >
-      <div class="profile-pic">
-        <div class="circle">
-          <img
-            src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
-          />
-        </div>
-        <div class="p-image">
-          <i class="fa fa-camera upload-button"></i>
-        </div>
-        <input
-          id="profile-image-upload"
-          class="hidden"
-          type="file"
-          onchange="previewFile()"
-        />
-        <div style="color: #999"></div>
-      </div>
-
-      <div class="mb-2">
-        <label for="fullname" class="form-label">FullName</label>
-        <input
-          type="text"
-          name="fullname"
-          id="fullname"
-          class="form-control"
-          placeholder="FullName: "
-          required
-        />
-      </div>
-
-      <div class="two mt-3">
-        <div class="mb-1">
-          <label for="birthdate" class="form-label">Date of birth</label>
-          <input
-            type="date"
-            name="birthdate"
-            id="birthdate"
-            class="form-control"
-            placeholder="Date of birth:"
-            required
-          />
-        </div>
-        <div class="mt-1">
-          <label for="gender">Gender</label>
-          <div class="mb-2 radio two mt-1">
-            <div class="form-check">
-              <input
-                type="radio"
-                class=""
-                name="gender"
-                id="male"
-                value="option1"
-                required
-              />
-              <label for="male" class="">Male</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                class=""
-                name="gender"
-                id="female"
-                value="option2"
-                required
-              />
-              <label for="female" class="">Female</label>
-            </div>
+<div class="cent">
+  <div class="row mt-2 container">
+    <h3 class="mb-1 mt-2 offset-3">Personal Details</h3>
+    <div class="col-5 mt-2 offset-3 details">
+      <form
+        action="/workerdetails"
+        method="POST"
+        novalidate
+        class="needs-validation"
+      >
+        <div class="profile-pic">
+          <div class="circle-p">
+            <img
+              src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+            />
           </div>
-        </div>
-      </div>
-
-      <div class="two mt-2">
-        <div class="mb-2">
-          <label for="email" class="form-label">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="Email id"
-            required
-          />
-        </div>
-
-        <div class="mb-1">
-          <label for="phone" class="form-label">Phone No.</label>
-          <input
-            type="number"
-            name="phone"
-            id="phone"
-            class="form-control"
-            placeholder="Phone No:"
-            required
-          />
-        </div>
-      </div>
-
-      <div class="two mt-2">
-        <div class="mb-1">
-          <label for="aadhar" class="form-label">Aadhar number</label>
-          <input
-            type="number"
-            name="aadhar"
-            id="aadhar"
-            class="form-control"
-            placeholder="Aadhar Number"
-            required
-          />
-        </div>
-        <div class="mt-1">
-          <label for="upload">Upload aadhar</label>
-          <div class="mb-2 uploadaadhar mt-1">
-            <input type="file" name="upload" id="upload" required />
+          <div class="p-image">
+            <i class="fa fa-camera upload-button"></i>
           </div>
+          <input
+            id="profile-image-upload"
+            class="hidden"
+            type="file"
+            onchange="previewFile()"
+          />
+          <div style="color: #999"></div>
         </div>
-      </div>
 
-      <div class="two mt-2">
         <div class="mb-2">
-          <label for="state" class="form-label">State</label>
+          <label for="fullname" class="form-label">FullName</label>
           <input
             type="text"
-            name="state"
-            id="state"
+            name="fullname"
+            id="fullname"
             class="form-control"
-            placeholder="State"
+            placeholder="FullName: "
             required
           />
         </div>
 
-        <div class="mb-1">
-          <label for="city" class="form-label">City</label>
-          <input
-            type="text"
-            name="city"
-            id="city"
-            class="form-control"
-            placeholder="City"
-            required
-          />
-        </div>
-      </div>
-
-      <div class="mb-2 address mt-2">
-        <label for="address" class="form-label">Current Address</label>
-        <textarea
-          name="address"
-          id="address"
-          placeholder="Provide the current address"
-        >
-        </textarea>
-      </div>
-
-      <div class="work-related-details mb-1 mt-5">
-        <h3 class="">Work-Related Details</h3>
         <div class="two mt-3">
           <div class="mb-1">
-            <label for="profession" class="form-label">Profession</label>
+            <label for="birthdate" class="form-label">Date of birth</label>
             <input
-              type="text"
-              name="profession"
-              id="profession"
+              type="date"
+              name="birthdate"
+              id="birthdate"
               class="form-control"
-              placeholder="ex.House cleaner"
+              placeholder="Date of birth:"
               required
             />
           </div>
           <div class="mt-1">
-            <label for="jobtype">Job type</label>
-            <div class="mb-2 mt-1 radio two jobtype">
-              <label for="cars">Choose a jobtype:</label>
-
-              <select name="jobtype" id="jobtype">
-                <option value="part-time">Part-time</option>
-                <option value="full-time">Full-time</option>
-              </select>
+            <label for="gender">Gender</label>
+            <div class="mb-2 radio two mt-1">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class=""
+                  name="gender"
+                  id="male"
+                  value="option1"
+                  required
+                />
+                <label for="male" class="">Male</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class=""
+                  name="gender"
+                  id="female"
+                  value="option2"
+                  required
+                />
+                <label for="female" class="">Female</label>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="two mt-2">
           <div class="mb-2">
-            <label for="charges" class="form-label">Charges</label>
+            <label for="email" class="form-label">Email</label>
             <input
-              type="number"
-              name="charges"
-              id="charges"
+              type="email"
+              name="email"
+              id="email"
               class="form-control"
-              placeholder="ex. 100/day"
+              placeholder="Email id"
               required
             />
           </div>
 
           <div class="mb-1">
-            <label for="experience" class="form-label">Experience</label>
+            <label for="phone" class="form-label">Phone No.</label>
             <input
-              type="Number"
-              name="experience"
-              id="experience"
+              type="number"
+              name="phone"
+              id="phone"
               class="form-control"
-              placeholder="Ex. 1year"
+              placeholder="Phone No:"
               required
             />
           </div>
         </div>
 
-        <div class="mt-1">
-          <label for="Availability">Availability</label>
-          <div class="mb-2 radio two mt-1">
-            <div class="form-check">
-              <input
-                type="radio"
-                class=""
-                name="availability"
-                id="yes"
-                value="option1"
-                required
-              />
-              <label for="yes" class="">Yes</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                class=""
-                name="availability"
-                id="no"
-                value="option2"
-                required
-              />
-              <label for="no" class="">No</label>
+        <div class="two mt-2">
+          <div class="mb-1">
+            <label for="aadhar" class="form-label">Aadhar number</label>
+            <input
+              type="number"
+              name="aadhar"
+              id="aadhar"
+              class="form-control"
+              placeholder="Aadhar Number"
+              required
+            />
+          </div>
+          <div class="mt-1">
+            <label for="upload">Upload aadhar</label>
+            <div class="mb-2 uploadaadhar mt-1">
+              <input type="file" name="upload" id="upload" required />
             </div>
           </div>
         </div>
 
+        <div class="two mt-2">
+          <div class="mb-2">
+            <label for="state" class="form-label">State</label>
+            <input
+              type="text"
+              name="state"
+              id="state"
+              class="form-control"
+              placeholder="State"
+              required
+            />
+          </div>
+
+          <div class="mb-1">
+            <label for="city" class="form-label">City</label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              class="form-control"
+              placeholder="City"
+              required
+            />
+          </div>
+        </div>
+
         <div class="mb-2 address mt-2">
-          <label for="Yourwork" class="form-label">Describe your work</label>
+          <label for="address" class="form-label">Current Address</label>
           <textarea
-            name="yourwork"
-            id="yourwork"
+            name="address"
+            id="address"
             placeholder="Provide the current address"
           >
           </textarea>
         </div>
 
-        <button class="btn login_btns mb-2">Save</button>
-        <!-- <button class="btn login_btns ms-3">Edit</button> -->
-      </div>
-    </form>
+        <div class="work-related-details mb-1 mt-5">
+          <h3 class="">Work-Related Details</h3>
+          <div class="two mt-3">
+            <div class="mb-1">
+              <label for="profession" class="form-label">Profession</label>
+              <input
+                type="text"
+                name="profession"
+                id="profession"
+                class="form-control"
+                placeholder="ex.House cleaner"
+                required
+              />
+            </div>
+            <div class="mt-1">
+              <label for="jobtype">Job type</label>
+              <div class="mb-2 mt-1 radio two jobtype">
+                <label for="cars">Choose a jobtype:</label>
+
+                <select name="jobtype" id="jobtype">
+                  <option value="part-time">Part-time</option>
+                  <option value="full-time">Full-time</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="two mt-2">
+            <div class="mb-2">
+              <label for="charges" class="form-label">Charges</label>
+              <input
+                type="number"
+                name="charges"
+                id="charges"
+                class="form-control"
+                placeholder="ex. 100/day"
+                required
+              />
+            </div>
+
+            <div class="mb-1">
+              <label for="experience" class="form-label">Experience</label>
+              <input
+                type="Number"
+                name="experience"
+                id="experience"
+                class="form-control"
+                placeholder="Ex. 1year"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mt-1">
+            <label for="Availability">Availability</label>
+            <div class="mb-2 radio two mt-1">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class=""
+                  name="availability"
+                  id="yes"
+                  value="option1"
+                  required
+                />
+                <label for="yes" class="">Yes</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class=""
+                  name="availability"
+                  id="no"
+                  value="option2"
+                  required
+                />
+                <label for="no" class="">No</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-2 address mt-3">
+            <label for="Yourwork" class="form-label">Describe your work</label>
+            <textarea
+              name="yourwork"
+              id="yourwork"
+              placeholder="Provide the current address"
+            >
+            </textarea>
+          </div>
+
+          <button class="btn login_btns mb-2 mt-2">Save</button>
+          <!-- <button class="btn login_btns ms-3">Edit</button> -->
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 <!-- <script src="/public/js/script.js"></script> -->
