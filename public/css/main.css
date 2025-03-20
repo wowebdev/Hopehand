@@ -1,0 +1,26 @@
+.main-page {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.main-text {
+  width: 60%;
+  height: 100%;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin: 0 !important;
+}
+
+.img-hope {
+    height: 34rem; /* Set a fixed height */
+    width: 50%; /* Set width */
+    background-image: url("./job.jpg"); /* Corrected path */
+    background-size: cover;
+    margin-top: 1rem;
+   
+}
+
+

@@ -1,0 +1,41 @@
+.navbar {
+  background-color: #bbe7f5;
+  height: 4.5rem;
+  width: 90%;
+  margin-top: 2rem;
+  position: sticky;
+  left: 5%;
+  right: 5%;
+  border-radius: 5rem;
+  background: rgba(187, 231, 245, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+.search-job {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 5rem;
+  width: 28rem;
+  height: 2.7rem;
+  background-color: #e8f9ff !important;
+  border-radius: 2rem;
+}
+
+.fa-magnifying-glass{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.navbar a:hover{
+    text-decoration: none !important;
+}
