@@ -67,4 +67,4 @@ app.get("/jobgiverprofile", (req, res) => {
 
 app.get('/About',(req,res)=>{
   res.render("About/About.ejs");
-})
+});
