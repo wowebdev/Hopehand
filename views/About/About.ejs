@@ -1,0 +1,202 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<style>
+  :root {
+    --primary-color: #3498db;
+    --text-color: #2c3e50;
+    --light-bg: #ecf0f1;
+  }
+
+  .banner {
+    background: url("assets/about-banner.jpg") center/cover no-repeat;
+    text-align: center;
+    padding: 3.125rem 1.25rem;
+    color: black;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+  }
+
+  .content-wrapper {
+    max-width: 56.25rem;
+    margin: auto;
+    padding: 1.25rem;
+  }
+
+  h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 0.9375rem;
+  }
+
+  .faq h3 {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.625rem;
+    cursor: pointer;
+    margin-top: 0.625rem;
+    border-radius: 0.3125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+
+  .faq h3::after {
+    content: "\25BC";
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .faq h3.active::after {
+    transform: rotate(180deg);
+  }
+
+  .faq p {
+    display: none;
+    padding: 0.625rem;
+    background: var(--light-bg);
+    border-left: 0.3125rem solid var(--primary-color);
+    width: 96%;
+  }
+
+  .team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .team-member {
+    text-align: center;
+  }
+
+  .team-member img {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    border: 0.1875rem solid var(--primary-color);
+  }
+</style>
+
+<div class="banner">
+  <h1>About HopeHands</h1>
+  <p>
+    Empowering skilled yet illiterate individuals in Nagpur by connecting them
+    with meaningful employment.
+  </p>
+</div>
+
+<div class="content-wrapper">
+  <h2>Our Mission</h2>
+  <p>
+    HopeHands is dedicated to helping skilled workers in Nagpur find stable job
+    opportunities. Whether you are a carpenter, cleaner, or mechanic, our
+    platform ensures that your skills are recognized and rewarded.
+  </p>
+  <p>
+    We aim to bridge the gap between skilled laborers and businesses that
+    require their expertise. By providing a seamless platform for hiring, we
+    ensure that both workers and employers benefit from a transparent and
+    efficient system.
+  </p><br><br>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <h3 onclick="toggleAnswer('faq1', this)">Who can register on HopeHands?</h3>
+    <p id="faq1">
+      Any skilled worker residing in Nagpur who needs employment can register on
+      our platform. We welcome individuals who have expertise in fields such as
+      carpentry, plumbing, cleaning, mechanics, and other hands-on trades. Our
+      goal is to provide equal job opportunities for everyone, ensuring they get
+      fair wages and a stable livelihood. By registering, workers can showcase
+      their skills and connect with potential employers looking for trustworthy
+      professionals.
+    </p>
+
+    <h3 onclick="toggleAnswer('faq2', this)">How do employers find workers?</h3>
+    <p id="faq2">
+      Employers can browse profiles and connect directly with skilled workers
+      based on their needs. Our platform provides a search and filter system to
+      help businesses quickly identify workers with the right expertise. Once a
+      match is found, they can contact the worker and finalize hiring
+      arrangements seamlessly. Additionally, we ensure that employer reviews and
+      worker ratings help maintain a reliable hiring process for both parties.
+    </p>
+
+    <h3 onclick="toggleAnswer('faq3', this)">Is HopeHands free to use?</h3>
+    <p id="faq3">
+      Yes, registration for workers is completely free, ensuring equal
+      opportunities for everyone. We believe that financial constraints should
+      not be a barrier to employment. Employers, however, may have access to
+      premium features for additional benefits, such as priority listing and
+      advanced filtering, which help in finding the best workers quickly and
+      efficiently.
+    </p>
+
+    <h3 onclick="toggleAnswer('faq4', this)">
+      What types of jobs are available?
+    </h3>
+    <p id="faq4">
+      HopeHands connects workers with jobs in carpentry, cleaning, mechanics,
+      plumbing, and many more skilled trades. We continuously expand our job
+      categories to include various skilled professions, allowing more workers
+      to find suitable employment. Whether it's daily wage work or full-time
+      employment, we aim to cater to diverse job preferences.
+    </p>
+
+    <h3 onclick="toggleAnswer('faq5', this)">
+      How does HopeHands verify worker skills?
+    </h3>
+    <p id="faq5">
+      We conduct basic skill assessments and rely on employer feedback to verify
+      the expertise of registered workers. We also encourage workers to upload
+      proof of prior work experience or certifications to enhance their
+      profiles. Additionally, workers with positive employer reviews gain better
+      visibility on the platform, helping them secure more job opportunities.
+    </p>
+
+    <h3 onclick="toggleAnswer('faq6', this)">How can I contact support?</h3>
+    <p id="faq6">
+      You can reach out to our support team via email or phone. Our dedicated
+      team is available to assist with any issues related to registration, job
+      postings, or hiring processes. We also have a help center with FAQs and
+      troubleshooting guides for common issues.
+    </p>
+
+    <h3 onclick="toggleAnswer('faq7', this)">
+      Can workers choose their job preferences?
+    </h3>
+    <p id="faq7">
+      Yes, workers can specify their job preferences, availability, and location
+      preferences to ensure they are matched with the most suitable employers.
+      They can also update their profiles anytime to reflect new skills or
+      experiences, helping them increase their chances of being hired.
+    </p>
+
+    <h3 onclick="toggleAnswer('faq8', this)">
+      Are there any training programs available?
+    </h3>
+    <p id="faq8">
+      HopeHands is working on introducing training programs to help workers
+      enhance their skills and improve employability. These programs will focus
+      on industry-specific skills, customer service, and safety training to
+      ensure workers are well-prepared for their roles.
+    </p>
+  </div>
+</div>
+
+<script>
+  function toggleAnswer(id, element) {
+    var answer = document.getElementById(id);
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      element.classList.remove("active");
+    } else {
+      answer.style.display = "block";
+      element.classList.add("active");
+    }
+  }
+</script>
