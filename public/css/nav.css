@@ -1,10 +1,11 @@
 .navbar {
   background-color: #bbe7f5;
   height: 4.5rem;
-  width: 90%;
-  margin-top: 2rem;
-  position: sticky;
-  left: 5%;
+  width: 75%;
+  margin-top: 0.5rem !important;
+  margin-left: 8rem ;
+  position: fixed;
+  left: 15%;
   right: 5%;
   border-radius: 5rem;
   background: rgba(187, 231, 245, 0.5);
@@ -14,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index:1;
 }
 
 .nav-link {
