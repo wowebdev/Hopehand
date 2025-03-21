@@ -12,6 +12,7 @@ app.set("views", path.join(__dirname, "views"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
+
 main()
   .then(() => {
     console.log("Connected to DB");
@@ -65,6 +66,6 @@ app.get("/jobgiverprofile", (req, res) => {
   res.render("profile/jobgiverprofile.ejs");
 });
 
-app.get('/About',(req,res)=>{
-  res.render("About/About.ejs");
+app.get('/about',(req,res)=>{
+  res.render("about/About.ejs");
 });
