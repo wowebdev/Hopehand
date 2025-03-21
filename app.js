@@ -65,6 +65,6 @@ app.get("/jobgiverprofile", (req, res) => {
   res.render("profile/jobgiverprofile.ejs");
 });
 
-app.get('/About',(req,res)=>{
+app.get("/about", (req, res) => {
   res.render("About/About.ejs");
 });
