@@ -89,3 +89,56 @@ span {
   background-color: #cde9f2;
   text-align: center;
 }
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.employee-card-wrapper {
+  min-width: calc(100% / 3); /* Ensures 3 cards are shown */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.employee-card {
+  text-align: center;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+.employee-card img{
+  height: 50%;
+  width:100%;
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  background-color:rgb(188 184 184);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
