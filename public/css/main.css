@@ -20,6 +20,7 @@
   width: 50%; /* Set width */
   background-image: url("./job.jpg"); /* Corrected path */
   background-size: cover;
+  border-radius: 1rem;
 }
 
 .work {
@@ -32,6 +33,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.work p{
+  margin: 0 !important;
+  font-size: 1.5rem;
 }
 
 span {
@@ -72,6 +78,7 @@ span {
 .outer-box {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 .info-box {
   width: 70%;
@@ -83,6 +90,7 @@ span {
   background-color: #f7abab !important;
   font-weight: bolder;
   font-size: 2rem;
+  border: 1px solid;
 }
 
 .job-info {
@@ -122,6 +130,7 @@ span {
 .employee-card img{
   height: 50%;
   width:100%;
+  border-radius: 1rem;
 }
 .slider-btn {
   position: absolute;

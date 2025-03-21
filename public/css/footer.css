@@ -7,6 +7,7 @@ footer {
   bottom: 0;
   width: 100%;
 } */
+
 .f1 {
   display: flex;
   justify-content: space-between;
@@ -20,6 +21,7 @@ footer {
   font-weight: 700 !important;
   font-size: 1.2rem;
 }
+
 
 #f1-icons {
   width: 12%;
