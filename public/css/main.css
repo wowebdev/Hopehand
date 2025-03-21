@@ -31,7 +31,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.work p {
+  margin: 0 !important;
+  font-size: 1.5rem !important;
 }
 
 span {
@@ -119,16 +124,16 @@ span {
   padding: 20px;
   border-radius: 10px;
 }
-.employee-card img{
+.employee-card img {
   height: 50%;
-  width:100%;
+  width: 100%;
 }
 .slider-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   color: black;
-  background-color:rgb(188 184 184);
+  background-color: rgb(188 184 184);
   border: none;
   padding: 10px;
   cursor: pointer;

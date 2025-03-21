@@ -57,14 +57,34 @@ app.get("/signup/worker", (req, res) => {
   res.render("users/signupworker.ejs");
 });
 
-app.get("/workerprofile", (req, res) => {
-  res.render("profile/workerprofile.ejs");
+app.get("/profile/edit/worker", (req, res) => {
+  res.render("profile/editworkerprofile.ejs");
 });
 
-app.get("/jobgiverprofile", (req, res) => {
+app.get("/profile/edit/jobgiver", (req, res) => {
+  res.render("profile/editjobgiverprofile.ejs");
+});
+
+app.get("/profile/jobgiver", (req, res) => {
   res.render("profile/jobgiverprofile.ejs");
+});
+
+app.get("/profile/worker", (req, res) => {
+  res.render("profile/workerprofile.ejs");
 });
 
 app.get("/about", (req, res) => {
   res.render("About/About.ejs");
+});
+
+app.get("/workerlistings", (req, res) => {
+  res.render("listings/workerlistings.ejs");
+});
+
+app.get("/jobgiverlistings", (req, res) => {
+  res.render("listings/jobgiverlistings.ejs");
+});
+
+app.get("/viewworker", (req, res) => {
+  res.render("profile/viewworkerprofile.ejs");
 });
