@@ -12,7 +12,6 @@ app.set("views", path.join(__dirname, "views"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
-
 main()
   .then(() => {
     console.log("Connected to DB");
@@ -58,15 +57,19 @@ app.get("/signup/worker", (req, res) => {
   res.render("users/signupworker.ejs");
 });
 
-app.get("/workerprofile", (req, res) => {
-  res.render("profile/workerprofile.ejs");
+app.get("/profile/edit/worker", (req, res) => {
+  res.render("profile/editworkerprofile.ejs");
 });
 
-app.get("/jobgiverprofile", (req, res) => {
+app.get("/profile/edit/jobgiver", (req, res) => {
+  res.render("profile/editjobgiverprofile.ejs");
+});
+
+app.get("/profile/jobgiver", (req, res) => {
   res.render("profile/jobgiverprofile.ejs");
 });
 
 app.get('/about',(req,res)=>{
-  res.render("about/About.ejs");
+  res.render("About/About.ejs");
 });
 
