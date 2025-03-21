@@ -69,7 +69,22 @@ app.get("/profile/jobgiver", (req, res) => {
   res.render("profile/jobgiverprofile.ejs");
 });
 
-app.get('/about',(req,res)=>{
+app.get("/profile/worker", (req, res) => {
+  res.render("profile/workerprofile.ejs");
+});
+app.get("/about", (req, res) => {
   res.render("About/About.ejs");
+});
+
+app.get("/workerlistings", (req, res) => {
+  res.render("listings/workerlistings.ejs");
+});
+
+app.get("/jobgiverlistings", (req, res) => {
+  res.render("listings/jobgiverlistings.ejs");
+});
+
+app.get("/viewworker", (req, res) => {
+  res.render("profile/viewworkerprofile.ejs");
 });
 
